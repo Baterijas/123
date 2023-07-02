@@ -76,13 +76,14 @@
           class="homepage-image725backgroundwhite11"
         />
         <div class="homepage-navbar">
-          <span class="homepage-menu button">MENU</span>
+          <span class="homepage-menu button"><a href="javascript:showhide('show')">MENU</a></span>
           <img
             alt="pastedImage"
             src="external/pastedimage-cq4u-200h.png"
             class="homepage-pasted-image"
           />
         </div>
+        <div id="show" style="display:none;">
         <div class="homepage-popupmenu">
           <a href="about.html">
             <div class="homepage-menuitem">
@@ -142,6 +143,7 @@
             class="homepage-line111"
           />
         </div>
+      </div>
         <div class="homepage-navbar1">
           <div class="homepage-navlinks">
             <a href="contacts.html" class="homepage-text09 button">CONTACTS</a>
@@ -336,5 +338,11 @@
         </div>
       </div>
     </div>
+    <script>
+      function showhide(show) {
+     var e = document.getElementById(show);
+     e.style.display = (e.style.display == 'flex') ? 'none' : 'flex';
+}
+  </script>
   </body>
 </html>
